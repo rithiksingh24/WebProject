@@ -1,12 +1,20 @@
 h1{
-    color:blue;
+    font-family: "futura";
+    color:black;
 }
-button{
-    color:blue
-}
-div{
-    border-style: solid;
-}
-c{
+div.relative {
+    position:absolute;
+    right: 0px;
+    border: 0px solid #555555;
+  }
+div.relativeleft {
+    position:absolute;
+    left: 0px;
+    border: 3px solid black;
+  }
+div.italics{
     font-style: italic;
+}
+.font{
+    font-family: "futura";
 }
