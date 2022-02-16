@@ -18,3 +18,11 @@ div.italics{
 .font{
     font-family: "futura";
 }
+ul.list {
+  height: auto;
+  width: 2000px;  
+}
+ul.list li{
+  display:inline-grid;
+  width: 220px;
+}
