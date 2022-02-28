@@ -1,4 +1,4 @@
-let t = [
+let productlist = [
     {
         "entryNumber": 0,
         "quantity": 1,
@@ -274,8 +274,8 @@ let t = [
 
 function cartvalue() {
     let tsum = 0;
-    for (let i = 0; i < t.length; i++) {
-        tsum += ((t[i]["quantity"]) * (t[i]["totalPrice"]["value"]));
+    for (let i = 0; i < productlist.length; i++) {
+        tsum += ((productlist[i]["quantity"]) * (productlist[i]["totalPrice"]["value"]));
     }
 
     document.getElementById("result").innerHTML = tsum;
