@@ -272,11 +272,11 @@ let t = [
 ]
 
 
-function x() {
+function cartvalue() {
     let tsum = 0;
     for (let i = 0; i < t.length; i++) {
         tsum += ((t[i]["quantity"]) * (t[i]["totalPrice"]["value"]));
     }
 
-    document.getElementById("hh").innerHTML = tsum;
+    document.getElementById("result").innerHTML = tsum;
 }
