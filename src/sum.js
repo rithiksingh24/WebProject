@@ -271,12 +271,25 @@ let productlist = [
     }
 ]
 
-
 function cartvalue() {
+    
+    
     let tsum = 0;
+    const product = new Array(productlist.length);
     for (let i = 0; i < productlist.length; i++) {
-        tsum += ((productlist[i]["quantity"]) * (productlist[i]["totalPrice"]["value"]));
+        tsum = ((productlist[i]["quantity"]) * (productlist[i]["totalPrice"]["value"]));
+        product[i]=tsum;
     }
 
+    function add(total,value){
+        return total+value;
+    }
+    tsum=product.reduce(add);
+    
+
+
     document.getElementById("result").innerHTML = tsum;
+
+ 
+    
 }
